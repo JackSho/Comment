@@ -1,0 +1,42 @@
+<idea-plugin>
+    <id>com.basecity.idea.plugin.clojure</id>
+    <name>Comment</name>
+    <!--  <name>Plugin display name here</name>-->
+    <version>1.0</version>
+    <vendor email="xiaojie@basecity.com" url="https://www.80166.com">4A Volcano</vendor>
+
+    <description><![CDATA[
+      对 clojure form 进行注释和反注释，未选择内容时，在本行非空字符前插入 #_，否则在选中内容的前面插入 #_ 。
+    ]]></description>
+
+    <change-notes><![CDATA[
+      Add change notes here.<br>
+      <h2>1.0</h2>
+        支持对 clojure form 进行快捷注释
+      <em>most HTML tags may be used</em>
+    ]]>
+    </change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="173.0"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+<!--    <depends>com.cursiveclojure.cursive</depends>-->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <action id="Comment" class="Form.CommentAction" text="Comment Clojure Form">
+<!--            <add-to-group group-id=":cursive.actions.paredit/clojure-edit-group" anchor="last"/>-->
+            <keyboard-shortcut keymap="$default" first-keystroke="meta alt SLASH"/>
+        </action>
+    </actions>
+
+</idea-plugin>
