@@ -2,7 +2,7 @@
     <id>com.basecity.idea.plugin.clojure</id>
     <name>Comment</name>
     <!--  <name>Plugin display name here</name>-->
-    <version>1.0</version>
+    <version>1.0.1</version>
     <vendor email="xiaojie@basecity.com" url="https://www.80166.com">4A Volcano</vendor>
 
     <description><![CDATA[
@@ -10,10 +10,10 @@
     ]]></description>
 
     <change-notes><![CDATA[
-      Add change notes here.<br>
+      <h2>1.0.1</h2>
+        自动取消行注释
       <h2>1.0</h2>
         支持对 clojure form 进行快捷注释
-      <em>most HTML tags may be used</em>
     ]]>
     </change-notes>
 
