@@ -2,7 +2,7 @@
     <id>com.basecity.idea.plugin.clojure</id>
     <name>Comment</name>
     <!--  <name>Plugin display name here</name>-->
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <vendor email="xiaojie@basecity.com" url="https://www.80166.com">4A Volcano</vendor>
 
     <description><![CDATA[
@@ -10,6 +10,8 @@
     ]]></description>
 
     <change-notes><![CDATA[
+      <h2>1.0.2</h2>
+        支持 191.4212 以上版本
       <h2>1.0.1</h2>
         自动取消行注释
       <h2>1.0</h2>
@@ -18,7 +20,7 @@
     </change-notes>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
-    <idea-version since-build="173.0"/>
+    <idea-version since-build="191.4212.41"/>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
          on how to target different products -->

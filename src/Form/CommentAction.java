@@ -16,7 +16,7 @@ public class CommentAction extends EditorAction {
     protected static final String LINE_COMMENT_SIGN = ";";
 
     public CommentAction() {
-        super(new CommentAction.Handler());
+        super(new Handler());
     }
 
     protected CommentAction(EditorActionHandler defaultHandler) {
@@ -33,7 +33,7 @@ public class CommentAction extends EditorAction {
 
         public void executeWriteAction(final Editor editor, Caret caret, DataContext context) {
             if (!editor.getSelectionModel().hasSelection(true)) {
-                if (Registry.is("editor.skip.copy.and.cut.for.empty.selection")) {
+                if (Registry.is("editor.skip.copy.and.cut.for.empty.selection", false)) {
                     return;
                 }
 
